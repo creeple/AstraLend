@@ -41,7 +41,9 @@ library whiteListAddress {
 contract multiSignature is multiSignatureClient {
     using whiteListAddress for address[];
     //所有管理员的地址
-    address[] public signatureOwners;
+    address[] public signatureOwners; 
+
+    
     //管理员的最小签名数量
     uint256 public minSignatureNum;
 
